@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', cursive, sans-serif;
+    min-height: 100vh;
+    font-size: 16px;
+    background-color: #2b2b2b;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    height: 600px; 
+    background-image: linear-gradient(to bottom,rgba(0,0,0, 0.2), rgba(0,0,0, 100)), url(images/main-images/karchi-beach.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    height: 80px;
+    border-bottom: 1px solid #2b2b2b;
+    width: 90%;
+    margin: auto;
+}
+
+.logo h2 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 900;
+    cursor: pointer;
+    color: #2b2b2b;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links {
+    margin: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #2b2b2b;
+    font-weight: 700;
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c75233;
+    border-bottom: 1px solid #c75233;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.title {
+    font-size: 6rem;
+    position: relative;
+    top: 20%;
+    left: 5%;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.title span {
+    color: #c75233;
+    font-family: 'Caveat', cursive, sans-serif;
+}
+
+/* Places */
+
+#places {
+    background-image: linear-gradient(to top,rgba(0,0,0, 0.2), rgba(0,0,0, 100));
+}
+
+.main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    color: #fff;
+    font-size: 3rem;
+    background-color: transparent;
+    text-transform: capitalize;
+}
+
+.image-box {
+    width: 300px;
+    height: 500px;
+    position: relative;
+}
+
+.image {
+    width: 300px;
+    height: 350px;
+    opacity: 0.5;
+    margin-bottom: 1.2rem;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.image-box .sub-title {
+    text-align: center;
+    font-weight: 500;
+    color: #c75233;
+    text-transform: capitalize;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 30px auto 0;
+}
+
+/*travel*/
+
+#travel {
+    height: 600px;
+    background-image: linear-gradient(to top,rgba(0,0,0, 0.2), rgba(0,0,0, 100)) ,url(images/main-images/mountain.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#travel .title {
+    font-size: 4rem;
+}
+
+/*Staff*/
+
+#staff {
+    background-image: linear-gradient(to bottom,rgba(0,0,0, 0.2), rgba(0,0,0, 100));
+    padding-bottom: 30px;
+}
+
+.introduction {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+}
+
+.staff-card {
+    width: 300px;
+    height: 400px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0.5;
+    margin-bottom: 1.2rem;
+}
+
+.staff-info {
+    text-align: center;
+    color: #c75233;
+    text-transform: capitalize;
+}
+
+.staff-info .name {
+    margin-bottom: 0.5rem;
+}
+
+/*contact us*/
+
+footer {
+    padding-top: 30px;
+    background-image: linear-gradient(to top,rgba(0,0,0, 0.2), rgba(0,0,0, 100));
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5% 0;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-us h2 {
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.contact-us p {
+    cursor: pointer;
+}
+
+.contact-us h2:hover, p:hover {
+    color: #c75233;
+}
+
+.social-icons a {
+    color: #fff;
+   font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: #c75233;
+}
+
+@media only screen and  (max-width: 900px) {
+    nav {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .hidden {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        margin: 0.5rem;
+    }
+
+    .title {
+        font-size: 4rem;
+        position: relative;
+        text-align: center;
+        line-height: 1;
+        left: 0;
+    }
+
+    .introduction {
+        height: 400px;
+    }
+
+    .staff-card {
+        width: 200px;
+        height: 300px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    .contact-us {
+        gap: 5px;
+    }
+
+    .social-icons a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    nav {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav-links {
+        margin: 5px;
+    }
+
+    #travel .title {
+        font-size: 3rem;
+    }
+}
